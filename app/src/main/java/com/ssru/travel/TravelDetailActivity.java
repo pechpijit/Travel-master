@@ -38,7 +38,7 @@ public class TravelDetailActivity extends AppCompatActivity implements BaseSlide
     LinearLayout view,view_detail,view_address,view_time,view_nearby;
     private SliderLayout mDemoSlider;
     HashMap<String, String> url_maps;
-    Button btn_search,btn_image;
+    Button btn_search,btn_image360;
     String la, lo;
     int id = 0;
     String TAG = "TravelDetailActivity";
@@ -74,7 +74,7 @@ public class TravelDetailActivity extends AppCompatActivity implements BaseSlide
         view_nearby = (LinearLayout) findViewById(R.id.view_nearby);
 
         btn_search = (Button) findViewById(R.id.btn_search);
-        btn_image = (Button) findViewById(R.id.btn_image);
+        btn_image360 = (Button) findViewById(R.id.btn_image360);
 
         ex_detail = (ExpandableTextView) this.findViewById(R.id.ex_detail);
         ex_address = (ExpandableTextView) this.findViewById(R.id.ex_address);
@@ -96,7 +96,7 @@ public class TravelDetailActivity extends AppCompatActivity implements BaseSlide
         view_time.setOnClickListener(this);
         view_nearby.setOnClickListener(this);
         btn_search.setOnClickListener(this);
-        btn_image.setOnClickListener(this);
+        btn_image360.setOnClickListener(this);
 
         Bundle i = getIntent().getExtras();
         id = i.getInt("id");
@@ -212,7 +212,7 @@ public class TravelDetailActivity extends AppCompatActivity implements BaseSlide
                         Uri.parse("http://maps.google.com/maps?daddr="+la+","+lo));
                 startActivity(intent);
                 break;
-            case R.id.btn_image:
+            case R.id.btn_image360:
                 Intent intent1 = new Intent(this, Img360Activity.class);
                 startActivity(intent1);
                 break;

@@ -125,11 +125,6 @@
                android:layout_height="2dp"
                android:background="@color/menu2" />
 
-           <FrameLayout
-               android:layout_width="match_parent"
-               android:layout_height="2dp"
-               android:background="@color/menu2" />
-
            <LinearLayout
                android:id="@+id/view_time"
                android:orientation="horizontal"
@@ -226,6 +221,17 @@
                android:textSize="24dp"
                android:textStyle="bold"
                android:text="รูปเพิ่มเติม"
+               android:textColor="@color/white" />
+           <android.support.v7.widget.AppCompatButton
+               android:id="@+id/btn_image360"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:padding="12dp"
+               android:layout_margin="5dp"
+               android:background="@color/colorPrimary"
+               android:textSize="24dp"
+               android:textStyle="bold"
+               android:text="รูป 360"
                android:textColor="@color/white" />
            <android.support.v7.widget.AppCompatButton
                android:id="@+id/btn_search"

@@ -58,7 +58,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DetailHistoryActivity"
-            android:label=""
+            android:label="ประวัติจังหวัดสุพรรณบุรี"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Img360Activity"></activity>
